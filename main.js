@@ -2,7 +2,13 @@ const { processTikTokVideo } = require('@imeshsan2008/fbdl');
 const express = require('express');
 
 const app = express();
+// Middleware for parsing JSON and URL-encoded data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send('Facebook Downloader Service is Running!');
+});
 // Endpoint to handle TikTok downloads
 app.all('/download/tiktok', async (req, res) => {
     const apikey = req.method === 'POST' ? req.body.apikey : req.query.apikey;

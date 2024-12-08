@@ -1,0 +1,26 @@
+{
+  "name": "@imeshsan2008/fbdl",
+  "version": "1.0.0",
+  "description": "A tool that fetches downloadable links and captions from Facebook links using Puppeteer with stealth mode to bypass detection. It allows you to retrieve media URLs and associated captions for further processing or downloading.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/imeshsan2008",
+  "license": "ISC",
+  "dependencies": {
+    "@imeshsan2008/fbdl": "^1.0.0",
+    "body-parser": "^1.20.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongodb": "^6.11.0",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^3.11.5",
+    "puppeteer-cluster": "^0.24.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "keywords": []
+}
